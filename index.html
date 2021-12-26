@@ -1,7 +1,61 @@
 <!DOCTYPE html>
+<head>
+    <title>Landing-1</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        .logo-table {
+            width: 100%;
+        }
+
+        .al-right {
+            text-align: right;
+        }
+
+        .tableOfModelPh {
+            border-width: 1px;
+            border-top-width: 8px;
+            border-style: solid;
+            width: 90%;
+            border-color: orange;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        .tableOfModelPh tr td {
+            border: 1px solid orange;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .tableOfModelPh thead tr th {
+            border: 1px solid orange;
+            padding: 10px;
+        }
+    </style>
+</head>
 <html>
     <body>
         <div>
+            <table class="logo-table"> 
+                <tr>
+                    <td>
+                        <img 
+                            src="./assets/logo-black.png"
+                            srcset="./assets/logo-black@2x.png 2x,
+                                    ./assets/logo-black@4x.png 4x"
+                            alt="Логотип"
+                        >
+                    </td>
+                    <td class="al-right">
+                        DECEMBER 2021
+                    </td>
+                </tr>
+            </table>
+            <img 
+                src="./assets/human.png"
+                srcset="./assets/human@2x.png 2x"
+                srcset="./assets/human@4x.png 4x"
+                alt="Человек развел руки">
             <h1>CHOOSE FLUTTER TO CHOOSE BOTH</h1>
             <button>REGISTER</button>
         </div>
@@ -31,6 +85,48 @@
         </div>
         <div>
             <h2>WHO</h2>
+            <table class="tableOfModelPh">
+                <caption>Цены на флагманские модели IPhone и Xiaomi</caption>
+                <thead>
+                    <tr>
+                        <th style="text-align: left;">Производитель</th>
+                        <th>Модель</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3" style="text-align: left;">IPhone</td>
+                        <td>12 Pro</td>
+                        <td>$999</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>$799</td>
+                    </tr>
+                    <tr>
+                        <td>12 mini</td>
+                        <td>$699</td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" style="text-align: left;">Xiaomi</td>
+                        <td>Mi 10</td>
+                        <td>$768</td>
+                    </tr>
+                    <tr>
+                        <td>Black Shark 3 128 Gb</td>
+                        <td>$529</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" style="text-align: left;"><b>Средняя цена:</b></td>
+                        <td><b>$758.8</b></td>
+                    </tr>
+                </tfoot>
+            </table>
             <button>Register</button>
         </div>
         <div>
