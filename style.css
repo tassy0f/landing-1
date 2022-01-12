@@ -37,3 +37,32 @@ h2 {
 #block3 h2, #block5 h2 {
     color: #ffffff;
 }
+
+.logo-table {
+    width: 100%;
+}
+
+.al-right {
+    text-align: right;
+}
+
+.tableOfModelPh {
+    border-width: 1px;
+    border-top-width: 8px;
+    border-style: solid;
+    width: 90%;
+    border-color: orange;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.tableOfModelPh tr td {
+    border: 1px solid orange;
+    padding: 10px;
+    text-align: center;
+}
+
+.tableOfModelPh thead tr th {
+    border: 1px solid orange;
+    padding: 10px;
+}
