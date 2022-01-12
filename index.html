@@ -3,25 +3,16 @@
     <title>Landing-1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Open+Sans:wght@700;800&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;900&family=Open+Sans:wght@700;800&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <html>
     <body>
         <div id="block1">
            <div class="wrap">
-                <table class="logo-table"> 
-                    <tr>
-                        <td> <!-- Убрал отсюда srcset потому что svg масштабируется без потери качества. -->
-                            <img 
-                                src="./assets/logo-black.svg" 
-                                alt="Логотип" 
-                            >
-                        </td>
-                        <td class="al-right">
-                            DECEMBER 2021
-                        </td>
-                    </tr>
-                </table>
+                <div class="logo-wrap">
+                        <img src="./assets/logo-white.svg" alt="Логотип">
+                        <p class="al-right">DECEMBER 2021</p>
+                </div>
                 <div class="human">
                     <table class="brendLogo">
                         <tr>
@@ -48,16 +39,23 @@
         </div>
         <div id="block2">
             <div class="wrap">
-                <h2>WORKSHOP</h2>
-                <p>
-                    We're launching a series of practical workshops on development in January 2020. We'll
-                    teach you how to know your way around software, share the latest news, and help to start.
-                </p>
-                <p>
-                    First workshop will familiarize you with cross-platform mobile development toolkit called
-                    Flutter. Join if you're aspiring to learn how to develop mobile apps and master new
-                    tools, but unsure what to start with.
-                </p>
+                <div class="logo-wrap">
+                    <img src="./assets/logo-black.svg" alt="Логотип">
+                    <h2 class="workshop">WORKSHOP</h2>
+                    <button class="regButton">REGISTER</button>
+                </div>
+                <div class="workshop-wrap">
+                    <p>
+                        We're launching a series of practical workshops on development in January 2020. We'll
+                        teach you how to know your way around software, share the latest news, and help to start.
+                    </p>
+                    <br>
+                    <p>
+                        First workshop will familiarize you with cross-platform mobile development toolkit called
+                        Flutter. Join if you're aspiring to learn how to develop mobile apps and master new
+                        tools, but unsure what to start with.
+                    </p>
+                </div>
             </div>
         </div>
         <div id="block3"> 
