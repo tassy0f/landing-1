@@ -18,7 +18,7 @@ body {
 }
 
 .wrap {
-    width: 100%;
+    max-width: 1280px;
     max-height: 1240px;
     margin: 0 auto;
     padding-top: 53px;
@@ -80,6 +80,15 @@ body {
     text-transform: uppercase;
     background: #FFFFFF;
     color: #4A4A4A;
+}
+
+.white_button:hover {
+    background: #dfdbdb;
+    border: #4A4A4A 1px solid ;
+}
+
+.white_button:active {
+    background: #c4c0c0;
 }
 
 .choose {
@@ -191,9 +200,25 @@ h2 {
     color: #4A4A4A;
 }
 
+.regButton:hover {
+    background: #dfdbdb;
+}
+
+.regButton:active {
+    background: #c4c0c0;
+}
+
 .b3 {
     border: 1px solid #ffffff;
     color: #ffffff;
+}
+
+.b3:hover {
+    background: #4e4d4c;
+}
+
+.b3:active {
+    background: #ee670e;
 }
 
 .workshop-wrap {
@@ -376,12 +401,9 @@ h2 {
     margin-top: 56px;
     margin-left: -88px;
     width: 186px;
-    height: 66px;
-
-    
+    height: 66px;  
     position: absolute;
     left: 50%;
-
     border: #fff;
     font-family: 'Open Sans';
     font-style: normal;
@@ -392,6 +414,15 @@ h2 {
     text-transform: uppercase;
     background: linear-gradient(0deg, #FF7E03, #FF7E03);
     color: #ffffff;
+}
+
+.b4_button:hover {
+    background: #eb6d07;
+    border: #4A4A4A 1px solid ;
+}
+
+.b4_button:active {
+    background: #e759079d;
 }
 
 #block5 {
