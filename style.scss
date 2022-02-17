@@ -1,0 +1,468 @@
+@mixin fontFamily($family, $style, $weight, $size, $height) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+$colorFamily: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
+#block1 {
+    width: 100%;
+    height: 763px;
+    background: linear-gradient(0deg, rgba(255,133,22,0.5), rgba(255, 133, 22, 0.5)), url(./assets/bg_orange.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.wrap {
+    max-width: 1280px;
+    max-height: 1240px;
+    margin: 0 auto;
+    padding-top: 53px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 74px;
+}
+
+.logo-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.al-right {
+    @include fontFamily('Source Sans Pro', normal, normal, 19px, 36px);
+    text-align: right;
+    color: $colorFamily;
+}
+
+.human {
+    margin: 0 auto;
+    width: 1072px;
+    height: 669px;
+    background: url(./assets/human.png);
+    position: relative;
+}
+
+.title-wrap{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -257px;
+    margin-top: -108px;
+    padding-left: 25px;
+    padding-top: 22px;
+}
+
+.title {
+    margin-bottom: 63px;
+}
+
+.white_button {
+    margin-right: 35px;
+    width: 186px;
+    height: 66px;
+    border: #fff;
+    @include fontFamily('Open Sans', normal, 800, 17px, 23px);
+    text-align: center;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    color: #4A4A4A;
+
+    &:hover {
+        background: #dfdbdb;
+        border: #4A4A4A 1px solid ;
+    }
+    
+    &:active {
+        background: #c4c0c0;
+    }
+}
+
+.choose {
+    @include fontFamily('Open Sans', normal, bold, 56px, 76px);
+    text-align: center;
+    letter-spacing: 0.845em;
+    text-transform: uppercase;
+    color: $colorFamily;
+}
+
+.flutter {
+    @include fontFamily('Fira Sans', normal, 800, 128px, 154px);
+    text-align: center;
+    color: $colorFamily;
+    margin-top: -32px;
+    margin-right: 9px;
+}
+
+.both {
+    @include fontFamily('Open Sans', normal, 800, 36px, 49px);
+    text-align: center;
+    letter-spacing: 0.37em;
+    text-transform: uppercase;
+    color: $colorFamily;
+    margin-top: -30px;
+    margin-right: -6px;
+}
+
+.brendLogo {
+    padding-top: 105px;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 100%;
+}
+
+.brendLogo p {
+    @include fontFamily('Source Sans Pro', normal, bold, 24px, 30px);
+    color: $colorFamily;
+}
+
+.ios-title {
+    padding-left: 29px;
+    padding-top: 9px;
+}
+
+.android-title {
+    padding-right: 5px;
+    padding-bottom: 9px;
+}
+
+#block2 {
+    width: 100%;
+    height: 764px;
+    position: relative;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.workshop {
+    margin-left: 46px;
+    width: 230px;
+    height: 36px;
+    @include fontFamily('Fira Sans', normal, normal, 36px, 36px);
+    text-align: center;
+    letter-spacing: 6px; 
+    color: #4A4A4A; 
+}
+
+.regButton {
+    width: 146px;
+    height: 46px;
+    border: 1px solid #4A4A4A;
+    @include fontFamily('Open Sans', normal, 800, 14px, 19px);
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    color: #4A4A4A;
+
+    &:hover {
+        background: #dfdbdb;
+    }
+
+    &:active {
+        background: #c4c0c0;
+    }
+}
+
+.b3 {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    &:hover {
+        background: #4e4d4c;
+    }
+
+    &:active {
+        background: #ee670e;
+    }
+}
+
+.workshop-wrap {
+    margin: 0 auto;
+    margin-top: 98px;
+    width: 700px;
+    height: 203px;
+    font-size: 19px;
+}
+
+.workshop_advertising {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    margin-top: 53px;
+}
+
+.family_sans_pro {
+    @include fontFamily('Source Sans Pro', normal, normal, 19px, 24px);
+    margin-left: 3px;
+    color: #4A4A4A;
+}
+
+.advertising_blocks {
+    width: 341px;
+    height: 202px;
+}
+
+.workshop_heading {
+    margin-right: -5px;
+    margin-top: 5px;
+    margin-bottom: 23px;
+    @include fontFamily('Fira Sans', normal, 800, 24px, 29px);
+    letter-spacing: -0.0366516px;
+    text-align: center;
+    color: #FF7E03;
+}
+
+.advertising_blocks p {
+    font-size: 17px;
+    text-align: start;
+    margin-left: 5px;
+}
+
+#block3 {
+    margin-top: 75px;
+    width: 100%;
+    height: 789px;
+    background: linear-gradient(0deg, #353535, #353535), linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(./assets/bg_gray.jpg);
+}
+
+.b3_when_and_where {
+    width: 400px;
+    height: 36px;
+    margin-left: 46px;
+    text-transform: uppercase;
+    @include fontFamily('Fira Sans', normal, 500, 36px, 36px);
+    text-align: center;
+    letter-spacing: 6px;
+    color: $colorFamily;
+}
+
+.where_info {
+    width: 100%;
+    height: 504px;
+    mix-blend-mode: normal;
+    border: 1px solid #FFFFFF;
+    margin-top: 79px;
+
+    padding-top: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.where_info_item {
+    width: 50%;
+    height: 242px;
+}
+
+.where_info_item h3 {
+    margin-bottom: 32px;
+    @include fontFamily('Fira Sans', normal, 800, 48px, 58px);
+    color: $colorFamily;
+}
+
+.description_item {
+    @include fontFamily('Fira Sans', normal, normal, 17px, 20px);
+    letter-spacing: -0.0326923px;
+    color: $colorFamily;
+}
+
+.where_learnUp {
+    margin-top: 5px;
+    @include fontFamily('Fira Sans', normal, bold, 36px, 43px);
+    letter-spacing: -0.0326923px;
+    color: $colorFamily;
+}
+
+.where_up_item {
+    margin-top: -7px;
+    @include fontFamily('Source Sans Pro', normal, normal, 32px, 40px);
+    letter-spacing: 13.2778px;
+    text-transform: uppercase;
+    color: $colorFamily;
+}
+
+.where_down_item {
+    margin-top: -23px;
+    @include fontFamily('Source Sans Pro', normal, bold, 96px, 121px);
+    letter-spacing: -0.0871795px;
+    color: $colorFamily;
+}
+
+.cost {
+    margin-top: 92px;
+}
+
+#block4 {
+    margin-top: 5px;
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+
+.b4 {
+    color: #4A4A4A;
+}
+
+#block4 h2, #block6 h2 {
+    margin-left: 34px;
+    @include fontFamily('Fira Sans', normal, 500, 36px, 36px);
+    text-align: center;
+    letter-spacing: 6px;
+    color: #4A4A4A;
+}
+
+.b4_button {
+    margin-top: 56px;
+    margin-left: -88px;
+    width: 186px;
+    height: 66px;  
+    position: absolute;
+    left: 50%;
+    border: #fff;
+    @include fontFamily('Open Sans', normal, 800, 17px, 23px);
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(0deg, #FF7E03, #FF7E03);
+    color: $colorFamily;
+
+    &:hover {
+        background: #eb6d07;
+        border: #4A4A4A 1px solid ;
+    }
+    
+    &:active {
+        background: #e759079d;
+    }
+}
+
+#block5 {
+    width: 100%;
+    height: 790px;
+    background: linear-gradient(0deg, rgba(255,133,22,0.5), rgba(255, 133, 22, 0.5)), url(./assets/bg_orange.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.b5 {
+    color: $colorFamily;  
+}
+
+.text-margin {
+    margin-top: 127px;
+    height: 103px;
+}
+
+#block5 .family_sans_pro {
+    margin-left: 6px;
+    text-align: justify;
+}
+
+.preparing {
+    margin-top: 24px;
+    margin-left: 32px;
+    width: 100%;
+    height: 78px;
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+    @include fontFamily('Fira Sans', normal, 500, 32px, 38px);
+    color: $colorFamily;
+}
+
+.preparing_data {
+    margin-top: 15px;
+    width: 315px;
+    @include fontFamily('Source Sans Pro', normal, normal, 19px, 24px);
+    letter-spacing: -0.0365385px;
+}
+
+#block5 .white_button {
+    margin-top: 111px;
+    margin-left: -88px;
+    position: absolute;
+    left: 50%;
+}
+
+#block6 {
+    width: 100%;
+    height: 764px; 
+}
+
+.org {
+    margin: 105px auto 0 auto;
+    max-width: 940px;
+    max-height: 240px;
+    position: relative; 
+}
+
+.description_org {
+    @include fontFamily('Source Sans Pro', normal, 200, 16px, 24px);
+    color: #000000;
+}
+
+.org_contacts {
+    margin-top: 149px;
+}
+
+.org_contacts a {
+    margin-right: 25px;
+}
+
+.b6 {
+    width: 206px;
+    height: 46px;
+    margin-top: -47px;
+    margin-left: 33px;
+    left: 75%;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.org span {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+}
+
+.quotermark {
+    @include fontFamily('Source Sans Pro', normal, normal, 15px, 19px);
+    color: #000000;
+}
+
+.mail {
+    font-size: 20px;
+    line-height: 25px;
+    color: #FF7E03;
+}
+
+.margin_130 {
+    margin-top: 130px;
+}
